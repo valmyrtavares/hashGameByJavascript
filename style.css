@@ -20,6 +20,10 @@ h1 {
     width: 30%;
     height:30%;
     margin:auto;
+    font-size:90px;
+    text-align: center;
+    color:white;
+    font-weight: bold;
 }
 .area :hover.item{
     background:rgb(148, 62, 228, .5)

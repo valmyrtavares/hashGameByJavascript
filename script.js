@@ -4,8 +4,8 @@
 //Todos os 9 quadros do jogo da velha
 let square = {
     a1:'', a2:"", a3:"",
-    b1:'', b2:"", b3:"",
-    c1:'', c2:"",  c3:"",
+    b1:'x', b2:"", b3:"",
+    c1:'', c2:"o",  c3:"",
 };
 
 let player = ""; 
@@ -15,6 +15,13 @@ let playing = false;
 
 reset();
 document.querySelector('.reset').addEventListener('click', reset) //Colocando um evento no botão reset
+document.querySelectorAll('.item').forEach(item => {
+    item.addEventListener('click', itemClick)
+})
+
+function itemClick(event){
+    console.log(event.target) //Ele printa a div que foi clicada
+}
 
 
 function reset() {
@@ -40,7 +47,7 @@ function renderSquare(){
     for(let i in square){
         let item = document.querySelector(`div[data-item=${i}]`)//lembrando que aqui o i é a1, a2, a3...
         if(square[i] !== ''){
-            item.innerHTML = SQUARE[i];
+            item.innerHTML = square[i];
         }//Aqui o square[i] corresponde ao que está dentro de cada quadrado e se ele tiver algo dentro ele vai colocar dentro de novo
         //não é muito intuitivo não...
     }
