@@ -1,2 +1,2 @@
-Começamos criando as variáveis que serão usadas e a função reset que começa disparando outras duas
-que é a renderSquare e a renderInfo que fica para o outro comit
+RenderSquare basicamente re preenche o tabuleiro como estava 
+renderiza o tabuleiro
