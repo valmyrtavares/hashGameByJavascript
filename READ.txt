@@ -1,2 +1,8 @@
-RenderSquare basicamente re preenche o tabuleiro como estava 
-renderiza o tabuleiro
+Na função de renderInfo começa sorteando um para começar o x ou o
+Isso é feito primeiro quando setamos o plauyer para nada e depois
+apontamos ele para o resultado do random ele já leva esse resultado
+na linha 23 e printa na tela com a linha 50, na 51 como não
+temos o warning ainda ele não printa nada.
+Aqui o teste é que o x ou o apareçãm na sua vez..
+Não tinha a class vez e por isso deu pau d no data-item a chave
+estava no lugar errado, mas já está corrigido.

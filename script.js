@@ -38,10 +38,15 @@ function renderSquare(){
     // }
 
     for(let i in square){
-        let item = document.querySelector(`idv[data-item]=${i}`)//lembrando que aqui o i é a1, a2, a3...
+        let item = document.querySelector(`div[data-item=${i}]`)//lembrando que aqui o i é a1, a2, a3...
         if(square[i] !== ''){
             item.innerHTML = SQUARE[i];
         }//Aqui o square[i] corresponde ao que está dentro de cada quadrado e se ele tiver algo dentro ele vai colocar dentro de novo
         //não é muito intuitivo não...
     }
+}
+
+function renderInfo(){
+    document.querySelector('.vez').innerHTML = player;
+    document.querySelector('.resultado').innerHTML = warning;
 }
