@@ -1,2 +1,2 @@
-Feito um css só para conter o jogo com as classes que ele nomeou
-E foi criado e testado o sript.js com o clássico console.log
+Começamos criando as variáveis que serão usadas e a função reset que começa disparando outras duas
+que é a renderSquare e a renderInfo que fica para o outro comit
