@@ -20,12 +20,14 @@ document.querySelectorAll('.item').forEach(item => {
 })
 
 function itemClick(event){
+    
     //console.log(event.target) Ele printa a div que foi clicada
     let item = event.target.getAttribute('data-item');
     //console.log("Clicou em " + item);
     if(square[item]===''){
       let x =   square[item]=player;
       renderSquare();
+      togglePlayer()
     }
 }
 
@@ -62,4 +64,8 @@ function renderSquare(){
 function renderInfo(){
     document.querySelector('.vez').innerHTML = player;
     document.querySelector('.resultado').innerHTML = warning;
+}
+
+function togglePlayer(){
+   player =  (player==='x' )? 'o':'x';
 }

@@ -1,5 +1,1 @@
-O itemClick recebe o evento e com o event.target e vira o indice do 
-objeto o
- let item = event.target.getAttribute('data-item'); 
- O item é o que vc clicou e ai nesse ele coloca o player x ou o
- Ai ele chama render square
+Depois do renderSquare temos o togglePlayer para trocar o jogador
