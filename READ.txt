@@ -1,2 +1,12 @@
-Estudo sobre a checagem de quem venceu. Aqui é a parte mais sensível e eu resolvi
-dar mais passos entre os commits.
+E muito mais rápido do que eu achava aqui está tudo funcionando
+1 Lembrando que o checkWinnerFor tem parametro e este é um paramentro global
+o player
+2 Voltei para dentro do renderSquare o checkGame
+4 E o isFull pergunta se todos os quadrados estão preenchidos se ele achar um vazio
+ele retonra false e o jogo continua se ele não achar ele retonra true e para o jogo
+como empate
+5 E quando um dos jogadores vence ele coloca o playing como false e na hora de clicar
+que é controlado pelo itemClick ele tem que ter essa condição para deixar ser clicado
+Se o quadrado está vazio e se o playing está true. Se alguem já ganhou o clicável deve
+ser interrompido.
+
