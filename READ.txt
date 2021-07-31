@@ -1,1 +1,2 @@
-Depois do renderSquare temos o togglePlayer para trocar o jogador
+Estudo sobre a checagem de quem venceu. Aqui é a parte mais sensível e eu resolvi
+dar mais passos entre os commits.
