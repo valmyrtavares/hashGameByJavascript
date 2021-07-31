@@ -4,8 +4,8 @@
 //Todos os 9 quadros do jogo da velha
 let square = {
     a1:'', a2:"", a3:"",
-    b1:'x', b2:"", b3:"",
-    c1:'', c2:"o",  c3:"",
+    b1:'', b2:"", b3:"",
+    c1:'', c2:"",  c3:"",
 };
 
 let player = ""; 
@@ -20,11 +20,17 @@ document.querySelectorAll('.item').forEach(item => {
 })
 
 function itemClick(event){
-    console.log(event.target) //Ele printa a div que foi clicada
+    //console.log(event.target) Ele printa a div que foi clicada
+    let item = event.target.getAttribute('data-item');
+    //console.log("Clicou em " + item);
+    if(square[item]===''){
+      let x =   square[item]=player;
+      renderSquare();
+    }
 }
 
 
-function reset() {
+function reset() {   
     warning = "";
     let random = Math.floor(Math.random() * 2) //Criando um número aleatório entre 2 1 e 0
     player = (random===0) ? 'x': 'o'; 
