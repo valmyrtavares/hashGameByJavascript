@@ -102,21 +102,40 @@ function checkWinnerFor(){
         'a3,b3,c3',
 
         'a1,b2,c3',
-        'c1,b2,a3',
-        
+        'c1,b2,a3',        
     ];  
+    // Primeira escrita mais simplificada
+
+    // for(let w in pos){
+    //     let pArray = pos[w].split(',');
+    //     pArray.every((option)=>{
+    //         console.log(option)                      
+    //        if(square[option]=== player){
+    //            return true
+    //        }else{
+    //            return false
+    //        }
+    //     }) 
+    // }
+    
+    /* Lembrando que aqui console.log(square[option]) retorna 8 vezes vazia
+    E console.log(option) retorna o primeiro item de cada array do vencedor a1,b1,c1,a2...
+    */
 
     for(let w in pos){
         let pArray = pos[w].split(',');
-        console.log(pArray)  
+        let hasWon = pArray.every(option=>square[option]=== player)          
+        if(hasWon){
+            return true;
+        }
     }
-    /* w é o indice, pos é o array para ver o array pos com os indices
-    console.log(pos[w]) pArray vai ser cada indice do pos e a cada rodada
-    ele vai ser subscrito. Ele é uma ferramenta de comparação. A primeira rodada
-    ele vai ser [a1, a2, a3] que é diferente de 'a1,a2,a2'
-    */
+   return false;
 
 }
+/* E aqui se a função com somente o que tem que ter ela pode retornar false ou true, se uma das opções
+retornar true ela preenche o hasWon com true e entra no return true e para a execução, se passar em todas e
+nada retornar true sai do for e retorna false. Enfatizando que nesse step não tem teste
+*/
 function isFull(){
 
 }
